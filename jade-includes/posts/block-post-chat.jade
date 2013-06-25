@@ -1,0 +1,25 @@
+mixin block-post-chat
+	|{block:Chat}
+	
+	li.post.chat
+		|{block:Title}
+		
+		h3
+			a(href="{Permalink}") {Title}
+		
+		|{/block:Title}
+
+		ul.chat
+			|{block:Lines}
+			
+			| <li class="{Alt}" user_{UserNumber}>
+			|{block:Label}
+			
+			span.label {Label}
+			
+			|{/block:Label}
+			| </li>
+			
+			|{/block:Lines}
+	
+	|{/block:Chat}

@@ -1,0 +1,13 @@
+mixin block-post-link
+	|{block:Link}
+	
+	li.post.link
+		|<a href="{URL}" class="link" {Target}>{Name}</a>
+
+		|{block:Description}
+		
+		div.description {Description}
+		
+		|{/block:Description}
+	
+	|{/block:Link}

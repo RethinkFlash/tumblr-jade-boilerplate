@@ -1,0 +1,22 @@
+include ./jade-includes/block-posts
+include ./jade-includes/block-description
+include ./jade-includes/block-footer
+
+html
+	head
+		title {Title}
+		link(rel="shortcut icon", href="{Favicon}")
+		link(rel="alternate", type="application/rss+xml", href="{RSS}")
+		|{block:Description}
+		meta(name="description", content="{MetaDescription}")
+		|{/block:Description}
+
+		
+	body
+		h1 {Title}
+
+		mixin block-description
+
+		mixin block-posts
+
+		mixin block-footer

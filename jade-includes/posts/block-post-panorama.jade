@@ -1,0 +1,17 @@
+mixin block-post-panorama
+	|{block:Panorama}
+	
+	li.post.panorama
+		|{block:LinkOpenTag}
+		
+		img(src="{PhotoURL-Panorama}", alt="{PhotoAlt}")
+		
+		|{/block:LinkOpenTag}
+
+		|{block:Caption}
+		
+		div.caption {Caption}
+		
+		|{/block:Caption}
+	
+	|{/block:Panorama}

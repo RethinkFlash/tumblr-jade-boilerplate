@@ -1,0 +1,23 @@
+@import 'bootstrap.less';
+
+caption {
+	background-color: #0097D3;
+	color: #fff;
+}
+
+div.container-fluid {
+	background-color: #EAEAEA;
+}
+
+.mainheader, .project-table {
+    text-align: center;
+    background-color: #fff;
+}
+
+.rounded-corners {
+	border-radius: 10px;
+}
+
+div.well {
+	margin: 20px 20px 20px 20px;
+}

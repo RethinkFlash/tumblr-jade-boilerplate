@@ -1,0 +1,15 @@
+mixin block-footer
+	p.footer
+		|{block:PreviousPage}
+		
+		a(href="{PreviousPage}") &#171; Previous
+		
+		|{/block:PreviousPage}
+
+		|{block:NextPage}
+		
+		a(href="{NextPage}") &#187;
+		
+		|{/block:NextPage}
+
+		a(href="/archive") Archive

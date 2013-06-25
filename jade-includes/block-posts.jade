@@ -1,0 +1,25 @@
+include ./posts/block-post-text
+include ./posts/block-post-photo
+include ./posts/block-post-panorama
+include ./posts/block-post-photoset
+include ./posts/block-post-quote
+include ./posts/block-post-link
+include ./posts/block-post-chat
+include ./posts/block-post-video
+include ./posts/block-post-audio
+
+mixin block-posts
+	ol#posts
+		|{block:Posts}
+
+		mixin block-post-text
+		mixin block-post-photo
+		mixin block-post-panorama
+		mixin block-post-photoset
+		mixin block-post-quote
+		mixin block-post-link
+		mixin block-post-chat
+		mixin block-post-video
+		mixin block-post-audio
+		
+		|{/block:Posts}

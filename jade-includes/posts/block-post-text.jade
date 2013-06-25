@@ -1,0 +1,13 @@
+mixin block-post-text
+	|{block:Text}
+
+	li.post.text
+		|{block:Title}
+
+		h3
+			a(href="{Permalink}") {Title}
+
+		|{/block:Title}
+		|{Body}
+
+	|{/block:Text}
